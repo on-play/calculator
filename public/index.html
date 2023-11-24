@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/styles.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-gray-900 text-gray-200 flex flex-col items-center justify-center min-h-screen p-5">
+    <!-- Header -->
+    <h1 class="text-2xl font-bold text-white mb-8">Calculator</h1>
+
+    <!-- Calculator Content -->
+    <div class="bg-gray-800 p-4 rounded-lg shadow-xl w-80">
+        <input type="text" id="display" readonly class="w-full bg-black text-green-400 text-right p-3 text-2xl rounded mb-5" value="0">
+        <!-- Calculator Buttons -->
+        <div id="buttons" class="grid grid-cols-4 gap-3">
+            <!-- Digit Buttons -->
+            <button onclick="appendNumber('1')" data-number="1"
+                class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-4 rounded focus:outline-none">1</button>
+            <button onclick="appendNumber('2')" data-number="2"
+                class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-4 rounded focus:outline-none">2</button>
+            <button onclick="appendNumber('3')" data-number="3"
+                class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-4 rounded focus:outline-none">3</button>
+            <button onclick="appendNumber('4')" data-number="4"
+                class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-4 rounded focus:outline-none">4</button>
+            <button onclick="appendNumber('5')" data-number="5"
+                class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-4 rounded focus:outline-none">5</button>
+            <button onclick="appendNumber('6')" data-number="6"
+                class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-4 rounded focus:outline-none">6</button>
+            <button onclick="appendNumber('7')" data-number="7"
+                class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-4 rounded focus:outline-none">7</button>
+            <button onclick="appendNumber('8')" data-number="8"
+                class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-4 rounded focus:outline-none">8</button>
+            <button onclick="appendNumber('9')" data-number="9"
+                class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-4 rounded focus:outline-none">9</button>
+            <button onclick="appendNumber('0')" data-number="0"
+                class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-4 rounded focus:outline-none">0</button>
+
+
+
+            <!-- Operator Buttons -->
+            <button onclick="setOperation('+')" data-operation="+"
+                class="bg-yellow-500 hover:bg-yellow-400 text-white font-bold py-3 px-4 rounded focus:outline-none">+</button>
+            <button onclick="setOperation('-')" data-operation="-"
+                class="bg-yellow-500 hover:bg-yellow-400 text-white font-bold py-3 px-4 rounded focus:outline-none">-</button>
+            <button onclick="setOperation('*')" data-operation="*"
+                class="bg-yellow-500 hover:bg-yellow-400 text-white font-bold py-3 px-4 rounded focus:outline-none">*</button>
+            <button onclick="setOperation('/')" data-operation="/"
+                class="bg-yellow-500 hover:bg-yellow-400 text-white font-bold py-3 px-4 rounded focus:outline-none">/</button>
+            <button onclick="setOperation('^')" data-operation="^"
+                class="bg-yellow-500 hover:bg-yellow-400 text-white font-bold py-3 px-4 rounded focus:outline-none">^</button>
+            <button onclick="squareRoot()" data-operation="sqrt"
+                class="bg-yellow-500 hover:bg-yellow-400 text-white font-bold py-3 px-4 rounded focus:outline-none">√</button>
+
+            <button onclick="memoryAdd()" data-memory="M+"
+                class="bg-green-500 hover:bg-green-400 text-white font-bold py-3 px-4 rounded focus:outline-none">M+</button>
+            <button onclick="memorySubtract()" data-memory="M-"
+                class="bg-green-500 hover:bg-green-400 text-white font-bold py-3 px-4 rounded focus:outline-none">M-</button>
+            <button onclick="memoryRecall()" data-memory="MR"
+                class="bg-green-500 hover:bg-green-400 text-white font-bold py-3 px-4 rounded focus:outline-none">MR</button>
+            <button onclick="memoryClear()" data-memory="MC"
+                class="bg-green-500 hover:bg-green-400 text-white font-bold py-3 px-4 rounded focus:outline-none">MC</button>
+
+            <!-- Equal and Clear Buttons -->
+            <button onclick="calculate()"
+                class="col-span-2 bg-blue-500 hover:bg-blue-400 text-white font-bold py-3 px-4 rounded focus:outline-none">=</button>
+            <button onclick="clearDisplay()"
+                class="bg-red-500 hover:bg-red-400 text-white font-bold py-3 px-4 rounded focus:outline-none">Esc</button>
+        </div>
+        <!-- End Calculator Buttons -->
+    </div>
+    <!-- End Calculator Content -->
+
+
+    <script src="calculator.js"></script>
+    <script src="aria-labels.js"></script>
+</body>
+
+</html>
