@@ -33,6 +33,21 @@
 5. Use the user's configured `sans` font-feature-settings by default.
 6. Use the user's configured `sans` font-variation-settings by default.
 */
+.calculator {
+  max-width: 300px;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .calculator {
+      max-width: 100%;
+      padding: 20px;
+  }
+  .calculator button {
+      padding: 15px;
+      font-size: 18px;
+  }
+}
 
 html {
   line-height: 1.5;
