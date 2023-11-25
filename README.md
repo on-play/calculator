@@ -37,7 +37,8 @@ This Calculator App is a simple, yet powerful web-based tool designed to perform
     ```bash
     npm start
     # or
-    node server.js```
+    node server.js
+    ```
 The app will be running on http://localhost:3000
 
 ## Usage
