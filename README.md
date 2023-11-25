@@ -16,7 +16,7 @@ This Calculator App is a simple, yet powerful web-based tool designed to perform
 
 - Frontend: HTML, CSS (Tailwind CSS for styling), JavaScript
 - Backend: Express.js (Node.js framework)
-- Deployment: [Deployment platform]
+- Deployment: Local
 - Version Control: Git and GitHub
 
 ## Installation and Setup
