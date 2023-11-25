@@ -40,11 +40,11 @@ This Calculator App is a simple, yet powerful web-based tool designed to perform
     node server.js```
 The app will be running on http://localhost:3000
 
-##Usage
+## Usage
 
 Simply navigate to the deployed app URL or, if running locally, go to http://localhost:3000. Use the on-screen buttons or your keyboard to perform calculations.
 
-##Contributing
+## Contributing
 
 Contributions to the Calculator App are welcome! If you have suggestions or improvements, feel free to fork this repository and submit a pull request.
 
